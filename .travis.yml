@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: eR3Gs6B6+QHitbZYZDwXzRYvErrLDnzhuJS3CdXp3BG1N9avBsf9jV3SxQmTC+2tIQEqgr4DrXFXECfFGx87ybEE1rtbs+CXUAWTl3rrlMBuoD3po2lHfMmatTftdX7L3fOXhTYTIz93ghwRYaetosDN4FDERwY3EYBBMT/TDSJqStJHkNSuoiQe1xalLgbgu9Nrc48gTo1D6KHrFUjmRNctkA3LaVgY9quWOTtU6SHDzHqKaW3TjEEJDbH+IT2c5LTPXmP9GW35YKQT1zXePHMqRV1zfnyKIytpDK+eJ6LLjl1JmwJAseONqKO0kj7pzErAdI8b3o44UjR+59PnFl2ZP5KRwEq/tuCawFvPRjCSnLqjSw4+Pp71/GBtnIBloMiM6jf4P9EOCrTK8ZWn+44PlJotNxQnK1PYrB9pGXnDeu0EW0dNjnE5gbJI2mXfEl86NeQ9gD4Jm3UJoE5HV3CgKL81RVwCn76ohDK+QfGQsvNfUicklOmdrZpLNKbTWLIpHl5jTyxYZZ+JkIqUF0N7ntj3PKFhA7WkE4zxcU7lhPD1AE/zQqjvjCi8fP65ndoEy3TAtrS652FAt/gS2bQisCLdy28RR4qywTlCBih5VYUf5Ydy6Tkh5P7sjpJtWTMo8+KUYhCCUywTBCxE6XZL9f9UozDk4AFUhqAUIC0=
+  app: damp-sierra-46322
+  on:
+    repo: sanadler/react-hot-cold
